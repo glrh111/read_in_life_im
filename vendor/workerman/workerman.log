@@ -1,0 +1,80 @@
+2017-08-07 15:52:25 pid:20967 Workerman[main.php] start in DEBUG mode
+2017-08-07 17:08:16 pid:20967 Workerman[main.php] Stopping ...
+2017-08-07 17:08:16 pid:20967 Workerman[main.php] has been stopped
+2017-08-07 17:08:16 pid:25701 Workerman[main.php] start in DEBUG mode
+2017-08-07 17:10:17 pid:25709 Error: Call to undefined method Workerman\Connection\TcpConnection::getRemoteHost() in /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/workerman/Protocols/Ws.php:370
+Stack trace:
+#0 /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/workerman/Protocols/Ws.php(224): Workerman\Protocols\Ws::sendHandshake(Object(Workerman\Connection\TcpConnection))
+#1 /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/workerman/Connection/TcpConnection.php(260): Workerman\Protocols\Ws::encode('Hello 7f0000010...', Object(Workerman\Connection\TcpConnection))
+#2 /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/gateway-worker/src/Gateway.php(558): Workerman\Connection\TcpConnection->send('Hello 7f0000010...')
+#3 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#4 /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/workerman/Connection/TcpConnection.php(480): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#5 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #45)
+#6 /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/workerman/Events/Select.php(286): call_user_func_array(Array, Array)
+#7 /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/workerman/Worker.php(1578): Workerman\Events\Select->loop()
+#8 /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/gateway-worker/src/Gateway.php(279): Workerman\Worker->run()
+#9 /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/workerman/Worker.php(966): GatewayWorker\Gateway->run()
+#10 /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/workerman/Worker.php(929): Workerman\Worker::forkOneWorker(Object(GatewayWorker\Gateway))
+#11 /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/workerman/Worker.php(430): Workerman\Worker::forkWorkers()
+#12 /home/glrh11/workspace/weapp/read_in_life_im/main.php(28): Workerman\Worker::runAll()
+#13 {main}
+2017-08-07 17:10:17 pid:25709 Worker[25709] process terminated with exit()/die(). Please do not call exit()/die() in workerman.
+2017-08-07 17:10:17 pid:25701 worker[YourAppGateway:25709] exit with status 64000
+2017-08-07 17:11:08 pid:25708 Error: Call to undefined method Workerman\Connection\TcpConnection::getRemoteHost() in /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/workerman/Protocols/Ws.php:370
+Stack trace:
+#0 /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/workerman/Protocols/Ws.php(224): Workerman\Protocols\Ws::sendHandshake(Object(Workerman\Connection\TcpConnection))
+#1 /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/workerman/Connection/TcpConnection.php(260): Workerman\Protocols\Ws::encode('Hello 7f0000010...', Object(Workerman\Connection\TcpConnection))
+#2 /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/gateway-worker/src/Gateway.php(558): Workerman\Connection\TcpConnection->send('Hello 7f0000010...')
+#3 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#4 /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/workerman/Connection/TcpConnection.php(480): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#5 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #46)
+#6 /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/workerman/Events/Select.php(286): call_user_func_array(Array, Array)
+#7 /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/workerman/Worker.php(1578): Workerman\Events\Select->loop()
+#8 /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/gateway-worker/src/Gateway.php(279): Workerman\Worker->run()
+#9 /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/workerman/Worker.php(966): GatewayWorker\Gateway->run()
+#10 /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/workerman/Worker.php(929): Workerman\Worker::forkOneWorker(Object(GatewayWorker\Gateway))
+#11 /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/workerman/Worker.php(430): Workerman\Worker::forkWorkers()
+#12 /home/glrh11/workspace/weapp/read_in_life_im/main.php(28): Workerman\Worker::runAll()
+#13 {main}
+2017-08-07 17:11:08 pid:25708 Worker[25708] process terminated with exit()/die(). Please do not call exit()/die() in workerman.
+2017-08-07 17:11:08 pid:25701 worker[YourAppGateway:25708] exit with status 64000
+2017-08-07 17:11:17 pid:25706 Error: Call to undefined method Workerman\Connection\TcpConnection::getRemoteHost() in /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/workerman/Protocols/Ws.php:370
+Stack trace:
+#0 /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/workerman/Protocols/Ws.php(224): Workerman\Protocols\Ws::sendHandshake(Object(Workerman\Connection\TcpConnection))
+#1 /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/workerman/Connection/TcpConnection.php(260): Workerman\Protocols\Ws::encode('Hello 7f0000010...', Object(Workerman\Connection\TcpConnection))
+#2 /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/gateway-worker/src/Gateway.php(558): Workerman\Connection\TcpConnection->send('Hello 7f0000010...')
+#3 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#4 /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/workerman/Connection/TcpConnection.php(480): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#5 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #44)
+#6 /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/workerman/Events/Select.php(286): call_user_func_array(Array, Array)
+#7 /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/workerman/Worker.php(1578): Workerman\Events\Select->loop()
+#8 /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/gateway-worker/src/Gateway.php(279): Workerman\Worker->run()
+#9 /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/workerman/Worker.php(966): GatewayWorker\Gateway->run()
+#10 /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/workerman/Worker.php(929): Workerman\Worker::forkOneWorker(Object(GatewayWorker\Gateway))
+#11 /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/workerman/Worker.php(430): Workerman\Worker::forkWorkers()
+#12 /home/glrh11/workspace/weapp/read_in_life_im/main.php(28): Workerman\Worker::runAll()
+#13 {main}
+2017-08-07 17:11:17 pid:25706 Worker[25706] process terminated with exit()/die(). Please do not call exit()/die() in workerman.
+2017-08-07 17:11:17 pid:25701 worker[YourAppGateway:25706] exit with status 64000
+2017-08-07 17:11:37 pid:25993 Error: Call to undefined method Workerman\Connection\TcpConnection::getRemoteHost() in /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/workerman/Protocols/Ws.php:370
+Stack trace:
+#0 /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/workerman/Protocols/Ws.php(224): Workerman\Protocols\Ws::sendHandshake(Object(Workerman\Connection\TcpConnection))
+#1 /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/workerman/Connection/TcpConnection.php(260): Workerman\Protocols\Ws::encode('Hello 7f0000010...', Object(Workerman\Connection\TcpConnection))
+#2 /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/gateway-worker/src/Gateway.php(558): Workerman\Connection\TcpConnection->send('Hello 7f0000010...')
+#3 [internal function]: GatewayWorker\Gateway->onWorkerMessage(Object(Workerman\Connection\TcpConnection), Array)
+#4 /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/workerman/Connection/TcpConnection.php(480): call_user_func(Array, Object(Workerman\Connection\TcpConnection), Array)
+#5 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #47)
+#6 /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/workerman/Events/Select.php(286): call_user_func_array(Array, Array)
+#7 /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/workerman/Worker.php(1578): Workerman\Events\Select->loop()
+#8 /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/gateway-worker/src/Gateway.php(279): Workerman\Worker->run()
+#9 /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/workerman/Worker.php(966): GatewayWorker\Gateway->run()
+#10 /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/workerman/Worker.php(929): Workerman\Worker::forkOneWorker(Object(GatewayWorker\Gateway))
+#11 /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/workerman/Worker.php(1082): Workerman\Worker::forkWorkers()
+#12 /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/workerman/Worker.php(433): Workerman\Worker::monitorWorkers()
+#13 /home/glrh11/workspace/weapp/read_in_life_im/main.php(28): Workerman\Worker::runAll()
+#14 {main}
+2017-08-07 17:11:37 pid:25993 Worker[25993] process terminated with exit()/die(). Please do not call exit()/die() in workerman.
+2017-08-07 17:11:37 pid:25701 worker[YourAppGateway:25993] exit with status 64000
+2017-08-07 17:14:01 pid:25701 Workerman[main.php] Stopping ...
+2017-08-07 17:14:01 pid:25701 Workerman[main.php] has been stopped
+2017-08-07 17:14:02 pid:26246 Workerman[main.php] start in DEBUG mode

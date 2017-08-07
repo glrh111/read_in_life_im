@@ -1,5 +1,10 @@
 {
+    "name"  : "read-in-life/im",
+    "type"  : "project",
+    "keywords": ["chat"],
+    "homepage": "https://glrh11.com",
+    "license" : "MIT",
     "require": {
-        "workerman/workerman": "^3.4"
+        "workerman/gateway-worker" : ">=3.0.0"
     }
 }

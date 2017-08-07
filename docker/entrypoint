@@ -1,0 +1,11 @@
+#!/bin/bash
+PREFIX=$(cd "$(dirname "$0")"; pwd)
+BASE=$PREFIX/read_in_life_im
+
+cd $BASE
+if [ "$1" = "serve" ]; then
+    echo "starting...."
+    exec php $BASE/main.php start
+else
+    exec "$@"
+fi
