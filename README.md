@@ -9,5 +9,5 @@
 ```
 1. cd docker
 2. docker build . -t read-in-life-im:v1
-3. docker run -p 8282:8282 -v read_in_life_im:/home/runtime/read_in_life_im --name read-in-life-im read-in-life-im:v1 serve
+3. docker run -itd -p 8282:8282 -v ./read_in_life_im/:/home/runtime/read_in_life_im/ --name read-in-life-im read-in-life-im:v1 serve
 ```
