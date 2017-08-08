@@ -8,7 +8,8 @@ RUN apt-get install -y \
     git \
     vim \
     php7.0 \
-    sudo
+    sudo \
+    php7.0-pgsql
 #    && rm -rf /var/lib/apt/lists/*
 
 RUN useradd -ms /bin/bash runtime && echo "runtime:wocao" | chpasswd && adduser runtime sudo

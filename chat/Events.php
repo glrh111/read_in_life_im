@@ -1,5 +1,7 @@
 <?php
 use \GatewayWorker\Lib\Gateway;
+use \chat\message;
+
 class Events
 {
     /**
