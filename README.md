@@ -29,3 +29,32 @@ c1, c2 代表在线的两个客户端; c3代表不在线的一个客户端
 2. docker build . -t read-in-life-im:v1
 3. docker run -itd -p 8282:8282 -v ./read_in_life_im/:/home/runtime/read_in_life_im/ --name read-in-life-im read-in-life-im:v1 serve
 ```
+
+## 消息类型
+
+### message_type 一级字段
+
++ 1001 服务端发出的ping消息
++ 1002 客户端回应的pong消息
+
++ 2001 一个客户端向另一个客户端发送的消息
+  + from_id
+  + to_id
+  + content
++ 2002 一个客户端向所有客户端发送的消息
+  + from_id
+  + content
++ 2003 im给客户端发送的历史消息
+  + content_list[]
+    + from_id
+    + content_list[]
+
++ 3001 客户端给im发送的已读消息确认
+  + message_id_list[]
+  + to_id
+  
++ 4001 客户端上线
+  + user_id
++ 4002 客户端下线
+
+### message_content 一级字段

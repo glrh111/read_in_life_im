@@ -21,9 +21,8 @@ class DB
     // 获取数据库连接; 如果已经连接过, 返回已经有的连接
     public static function getConnection ()
     {
-
         if (self::$sqlconn==null) {
-            self::$sqlconn = pg_connect("host=172.17.0.2 port=5432 dbname=read_in_life user=read_in_life password=wocao");
+            self::$sqlconn = pg_connect("host=postgres port=5432 dbname=read_in_life user=read_in_life password=wocao");
         }
         return self::$sqlconn;
     }

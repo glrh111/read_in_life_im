@@ -17,6 +17,8 @@ use \GatewayWorker\Gateway;
 use \GatewayWorker\BusinessWorker;
 use \Workerman\Autoloader;
 
+require_once __DIR__ . "/model/message_type.php";
+
 // gateway 进程，这里使用Text协议，可以用telnet测试
 $gateway = new Gateway("websocket://0.0.0.0:8282");
 // gateway名称，status方便查看
@@ -34,7 +36,10 @@ $gateway->registerAddress = '127.0.0.1:1238';
 // 心跳间隔
 $gateway->pingInterval = 10;
 // 心跳数据
-$gateway->pingData = '{"type":"ping"}';
+$gateway->pingData = json_encode([
+    'message_type'=> \chat\message\MessageTypeModel::PING,
+    'message_content'=> 'ping'
+]);
 
 $gateway->pingNotResponseLimit = 9;
 

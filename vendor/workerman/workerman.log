@@ -156,3 +156,74 @@ Stack trace:
 2017-08-08 18:35:51 pid:27724 Workerman[main.php] start in DEBUG mode
 2017-08-08 19:22:28 pid:27724 Workerman[main.php] Stopping ...
 2017-08-08 19:22:28 pid:27724 Workerman[main.php] has been stopped
+2017-08-09 11:18:40 pid:8487 Workerman[main.php] start in DEBUG mode
+2017-08-09 11:21:04 pid:8489 Error: Cannot use object of type stdClass as array in /home/glrh11/workspace/weapp/read_in_life_im/chat/Events.php:33
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b55000...', '{"message_type"...')
+#1 /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/gateway-worker/src/BusinessWorker.php(384): call_user_func('Events::onMessa...', '7f0000010b55000...', '{"message_type"...')
+#2 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/workerman/Connection/TcpConnection.php(480): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #51)
+#5 /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/workerman/Events/Select.php(286): call_user_func_array(Array, Array)
+#6 /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/workerman/Worker.php(1578): Workerman\Events\Select->loop()
+#7 /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/gateway-worker/src/BusinessWorker.php(190): Workerman\Worker->run()
+#8 /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/workerman/Worker.php(966): GatewayWorker\BusinessWorker->run()
+#9 /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/workerman/Worker.php(929): Workerman\Worker::forkOneWorker(Object(GatewayWorker\BusinessWorker))
+#10 /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/workerman/Worker.php(430): Workerman\Worker::forkWorkers()
+#11 /home/glrh11/workspace/weapp/read_in_life_im/main.php(38): Workerman\Worker::runAll()
+#12 {main}
+2017-08-09 11:21:04 pid:8489 Worker[8489] process terminated with exit()/die(). Please do not call exit()/die() in workerman.
+2017-08-09 11:21:04 pid:8487 worker[YourAppBusinessWorker:8489] exit with status 64000
+2017-08-09 11:21:33 pid:8797 Error: Cannot use object of type stdClass as array in /home/glrh11/workspace/weapp/read_in_life_im/chat/Events.php:33
+Stack trace:
+#0 [internal function]: Events::onMessage('7f0000010b55000...', '{"message_type"...')
+#1 /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/gateway-worker/src/BusinessWorker.php(384): call_user_func('Events::onMessa...', '7f0000010b55000...', '{"message_type"...')
+#2 [internal function]: GatewayWorker\BusinessWorker->onGatewayMessage(Object(Workerman\Connection\AsyncTcpConnection), Array)
+#3 /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/workerman/Connection/TcpConnection.php(480): call_user_func(Array, Object(Workerman\Connection\AsyncTcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #52)
+#5 /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/workerman/Events/Select.php(286): call_user_func_array(Array, Array)
+#6 /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/workerman/Worker.php(1578): Workerman\Events\Select->loop()
+#7 /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/gateway-worker/src/BusinessWorker.php(190): Workerman\Worker->run()
+#8 /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/workerman/Worker.php(966): GatewayWorker\BusinessWorker->run()
+#9 /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/workerman/Worker.php(929): Workerman\Worker::forkOneWorker(Object(GatewayWorker\BusinessWorker))
+#10 /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/workerman/Worker.php(1082): Workerman\Worker::forkWorkers()
+#11 /home/glrh11/workspace/weapp/read_in_life_im/vendor/workerman/workerman/Worker.php(433): Workerman\Worker::monitorWorkers()
+#12 /home/glrh11/workspace/weapp/read_in_life_im/main.php(38): Workerman\Worker::runAll()
+#13 {main}
+2017-08-09 11:21:33 pid:8797 Worker[8797] process terminated with exit()/die(). Please do not call exit()/die() in workerman.
+2017-08-09 11:21:33 pid:8487 worker[YourAppBusinessWorker:8797] exit with status 64000
+2017-08-09 11:24:46 pid:8487 Workerman[main.php] Stopping ...
+2017-08-09 11:24:46 pid:8487 Workerman[main.php] has been stopped
+2017-08-09 11:24:46 pid:9031 Workerman[main.php] start in DEBUG mode
+2017-08-09 11:25:18 pid:9031 Workerman[main.php] Stopping ...
+2017-08-09 11:25:18 pid:9031 Workerman[main.php] has been stopped
+2017-08-09 11:25:19 pid:9123 Workerman[main.php] start in DEBUG mode
+2017-08-09 11:52:05 pid:9123 Workerman[main.php] Stopping ...
+2017-08-09 11:52:05 pid:9123 Workerman[main.php] has been stopped
+2017-08-09 11:52:06 pid:11993 Workerman[main.php] start in DEBUG mode
+2017-08-09 14:18:48 pid:11993 Workerman[main.php] Stopping ...
+2017-08-09 14:18:48 pid:11993 Workerman[main.php] has been stopped
+2017-08-09 14:19:50 pid:16453 Workerman[main.php] start in DEBUG mode
+2017-08-09 14:43:01 pid:16453 Workerman[main.php] Stopping ...
+2017-08-09 14:43:01 pid:16453 Workerman[main.php] has been stopped
+2017-08-09 14:43:02 pid:18502 Workerman[main.php] start in DEBUG mode
+2017-08-09 15:04:18 pid:18502 Workerman[main.php] Stopping ...
+2017-08-09 15:04:18 pid:18502 Workerman[main.php] has been stopped
+2017-08-09 15:06:11 pid:19978 Workerman[main.php] start in DEBUG mode
+2017-08-09 16:14:40 pid:19978 Workerman[main.php] Stopping ...
+2017-08-09 16:14:40 pid:19978 Workerman[main.php] has been stopped
+2017-08-09 16:14:40 pid:25945 Workerman[main.php] start in DEBUG mode
+2017-08-09 16:15:37 pid:25945 Workerman[main.php] Stopping ...
+2017-08-09 16:15:37 pid:25945 Workerman[main.php] has been stopped
+2017-08-09 16:15:37 pid:26054 Workerman[main.php] start in DEBUG mode
+2017-08-09 16:23:30 pid:26054 Workerman[main.php] Stopping ...
+2017-08-09 16:23:30 pid:26054 Workerman[main.php] has been stopped
+2017-08-09 16:23:31 pid:26515 Workerman[main.php] start in DEBUG mode
+2017-08-09 16:32:25 pid:26515 Workerman[main.php] Stopping ...
+2017-08-09 16:32:25 pid:26515 Workerman[main.php] has been stopped
+2017-08-09 16:32:25 pid:27494 Workerman[main.php] start in DEBUG mode
+2017-08-09 16:51:50 pid:27494 Workerman[main.php] Stopping ...
+2017-08-09 16:51:51 pid:27494 Workerman[main.php] has been stopped
+2017-08-09 16:51:51 pid:28638 Workerman[main.php] start in DEBUG mode
+2017-08-09 16:51:57 pid:28638 Workerman[main.php] Stopping ...
+2017-08-09 16:51:57 pid:28638 Workerman[main.php] has been stopped
